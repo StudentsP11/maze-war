@@ -1,6 +1,7 @@
 #include <iostream>
-#include <conio.h>
-#include <windows.h>
+//#include <conio.h>
+//#include <windows.h>
+#include <string>
 
 using namespace std;
 struct Point2D {
@@ -33,7 +34,41 @@ void MoveDown(Entity &entity) {
 
 }
 
+enum Moving {
+	down,
+	up,
+	right,
+	left,
+
+
+};
+
+template <typename move_key>
 
 int main() {
 
+
+	switch (move_key)
+	{
+	case Moving::down:
+		MoveDown(Entity &entity);
+		break;
+
+	case Moving::up:
+		MoveUp(Entity & entity);
+		break;
+
+	case Moving::right:
+		MoveRight(Entity & entity);
+		break;
+
+	case Moving::left:
+		MoveLeft(Entity & entity);
+		break;
+	}
+
+
 }
+
+
+
