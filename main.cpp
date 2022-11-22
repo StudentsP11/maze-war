@@ -34,7 +34,7 @@ void MoveDown(Entity &entity) {
 
 }
 
-enum Moving {
+enum  {
 	down,
 	up,
 	right,
@@ -46,29 +46,28 @@ enum Moving {
 template <typename move_key>
 
 int main() {
+	Entity.entity;
 
 
 	switch (move_key)
 	{
 	case Moving::down:
-		MoveDown(Entity &entity);
+		MoveDown(entity);
 		break;
 
 	case Moving::up:
-		MoveUp(Entity & entity);
+		MoveUp(entity);
 		break;
 
 	case Moving::right:
-		MoveRight(Entity & entity);
+		MoveRight(entity);
 		break;
 
 	case Moving::left:
-		MoveLeft(Entity & entity);
+		MoveLeft(entity);
 		break;
 	}
 
 
 }
-
-
 
